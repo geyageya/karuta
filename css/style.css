@@ -1,12 +1,8 @@
-.erase {
-  visibility: hidden;
-}
-
 body {
-  background: #efdec1;
-  font-size: 14px;
-  font-family: Verdana, sans-serif;
-  text-align: center;
+  background: grey;
+  /* font-size: 14px;
+  font-family: Verdana, sans-serif; */
+  /* text-align: center; */
 }
 
 .container {
@@ -15,60 +11,58 @@ body {
   background: #fff;
   border-radius: 4px;
   padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
   position: relative;
 }
 
-.showClue {
-  width: 900px;
-  margin: 6px auto;
-  background: #fff;
-  padding-bottom: 10px;
-}
 h1 {
   color: #979797;
 }
 
-h3 {
+#btn {
+  width: 100px;
+  background: #3498db;;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
   text-align: center;
+  color: white;
 }
 
-.howToPlay {
-  list-style: decimal;
-  text-align: left;
+.showClue {
+  width: 450px;
+  margin: 6px auto;
+  background: #fff;
+  padding-bottom: 10px;
 }
 
-/* ul {
+
+#fuda {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-} */
-
-ul.fuda {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  cursor: pointer;
 }
 
-#fuda img.correct{
-  visibility: hidden;
-}
-
-ul img {
+#fuda li img{
   max-width: 150px;
-  max-height: 150px;
+  max-height: 120px;
 }
 
-img {
-  max-width: 120px;
-  max-height: 120px;
-  visibility: visible;
+/* 景谷追加（正解の場合にクラス追加） */
+#fuda li img.erase{
+  visibility: hidden; 
 }
+
+.erase{
+  visibility: hidden; 
+}
+
 
 #touchBtn,
 #result > a {
@@ -98,7 +92,7 @@ img {
   background: #fff;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  top: 150px;
+  top: 300px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -141,4 +135,14 @@ img {
 #result > a {
   display: block;
   text-decoration: none;
+}
+
+
+h3 {
+  text-align: center;
+}
+
+.howToPlay {
+  list-style: decimal;
+  text-align: left;
 }
